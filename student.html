@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Profile Portal</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>yogi vemana university</h1>
+        <p>Student Profile and College Information Portal</p>
+        <hr>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#student">Student</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#registration">Registration</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Student Introduction -->
+        <section id="student">
+            <h2>Student Information</h2>
+
+            <article>
+                <p>
+                    My name is <b>Mayuri</b>.
+                    I am a <strong>Master of Computer Applications</strong> student
+                    studying at <i>yogi vemana university</i>.
+                    I am currently in my <em>final year</em>.
+                </p>
+
+                <p>
+                    I am interested in <u>Web Development</u> and
+                    <mark>Artificial intelligence</mark>.
+                </p>
+
+                <p>
+                    I am learning HTML, CSS and JavaScript.
+                    <small>This is a small text.</small>
+                </p>
+
+                <p>
+                    Water formula is H<sub>2</sub>O.
+                    2<sup>2</sup> = 4.
+                </p>
+            </article>
+        </section>
+
+        <!-- Student Image -->
+        <section>
+            <h2>Student Image</h2>
+
+            <img src="student.jpg"
+                 alt="Student Profile Image"
+                 width="200"
+                 height="200">
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <!-- Education Details -->
+        <section id="education">
+            <h2>Education Details</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Course</th>
+                        <th>College</th>
+                        <th>Year</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>ST101</td>
+                        <td>MCA</td>
+                        <td>yvu</td>
+                        <td>2026</td>
+                        <td>85%</td>
+                    </tr>
+
+                    <tr>
+                        <td>ST102</td>
+                        <td>MCA</td>
+                        <td>yvu</td>
+                        <td>2026</td>
+                        <td>88%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Hobbies -->
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+
+            <ol>
+                <li>Reading</li>
+                <li>Listening to Music</li>
+                <li>Watching Movies</li>
+                <li>Playing Sports</li>
+            </ol>
+        </section>
+
+        <!-- Useful Links -->
+        <section>
+            <h2>Useful Links</h2>
+
+            <a href="https://www.google.com" target="_blank">
+                Google
+            </a>
+            <br>
+
+            <a href="https://www.w3schools.com" target="_blank">
+                W3Schools
+            </a>
+            <br>
+
+            <a href="about.html">
+                About College
+            </a>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="registration">
+
+            <h2>Student Registration Form</h2>
+
+            <form >
+
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your name"
+                       required>
+
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+
+                <br><br>
+
+                <!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password"
+                       id="password"
+                       name="password"
+                       required>
+
+                <br><br>
+
+                <!-- Age -->
+                <label for="age">Age:</label>
+                <input type="number"
+                       id="age"
+                       name="age"
+                       min="1"
+                       max="100"
+                       required>
+
+                <br><br>
+
+                <!-- Date of Birth -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date"
+                       id="dob"
+                       name="dob"
+                       required>
+
+                <br><br>
+
+                <!-- Gender -->
+                <label>Gender:</label>
+
+                <input type="radio"
+                       id="male"
+                       name="gender"
+                       value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio"
+                       id="female"
+                       name="gender"
+                       value="Female">
+                <label for="female">Female</label>
+
+                <br><br>
+
+                <!-- Course Dropdown -->
+                <label for="course">Course:</label>
+
+                <select id="course" name="course" required>
+                    <option value="">--Select Course--</option>
+                    <option value="btech">B.Tech</option>
+                    <option value="bca">BCA</option>
+                    <option value="bsc">B.Sc</option>
+                    <option value="mca">MCA</option>
+                </select>
+
+                <br><br>
+
+                <!-- Skills / Checkbox -->
+                <label>Skills:</label>
+
+                <input type="checkbox"
+                       id="html"
+                       name="skills"
+                       value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox"
+                       id="css"
+                       name="skills"
+                       value="CSS">
+                <label for="css">CSS</label>
+
+                <input type="checkbox"
+                       id="javascript"
+                       name="skills"
+                       value="JavaScript">
+                <label for="javascript">JavaScript</label>
+
+                <br><br>
+
+                <!-- Address -->
+                <label for="address">Address:</label><br>
+
+                <textarea id="address"
+                          name="address"
+                          rows="5"
+                          cols="40"
+                          placeholder="Enter your address"
+                          required></textarea>
+
+                <br><br>
+
+                <!-- City -->
+                <label for="city">City:</label>
+
+                <input type="text"
+                       id="city"
+                       name="city"
+                       required>
+
+                <br><br>
+
+                <!-- State -->
+                <label for="state">State:</label>
+
+                <input type="text"
+                       id="state"
+                       name="state"
+                       required>
+
+                <br><br>
+
+                <!-- File -->
+                <label for="photo">Upload Photo:</label>
+
+                <input type="file"
+                       id="photo"
+                       name="photo">
+
+                <br><br>
+
+                <!-- Submit and Reset -->
+                <input type="submit" value="Submit">
+
+                <input type="reset" value="Reset">
+
+            </form>
+
+        </section>
+
+        <!-- Audio Bonus -->
+        <section>
+            <h2>College Audio</h2>
+
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
+
+        <!-- Video Bonus -->
+        <section>
+            <h2>College Video</h2>
+
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/9ctVu7w5VDk?si=2DHsJenly7_ITyiW" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+
+            </iframe>
+        </section>
+
+
+        <!-- Google Maps Bonus -->
+        <section>
+            <h2>College Location</h2>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.1506068244535!2d78.7143366!3d14.476039900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb37429324e47b3%3A0x6367c254751204d4!2sYogi%20Vemana%20University!5e0!3m2!1sen!2sin!4v1790407373818!5m2!1sen!2sin" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="strict-origin-when-cross-origin">
+
+            </iframe>
+            
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>ABC College of Engineering</p>
+        <p>Email: college@example.com</p>
+        <p>&copy; 2026 ABC College. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
